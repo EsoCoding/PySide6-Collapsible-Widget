@@ -1,6 +1,6 @@
-# PySide2 Collapsible Widget/ frameLayout
+# PySide6 Collapsible Widget/ frameLayout
 
-Simple collapsible widget for PySide2, made to mimic Maya's native GUI
+Simple collapsible widget for PySide6, made to mimic Maya's native GUI
 
 ![demo](https://user-images.githubusercontent.com/50831997/120691061-49667a00-c4a6-11eb-82fd-dd70270dd1a9.gif)
 
