@@ -1,0 +1,143 @@
+[
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPalette",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QStackedLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSpacerItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PySide6",
+        "description": "PySide6",
+        "isExtraImport": true,
+        "detail": "PySide6",
+        "documentation": {}
+    },
+    {
+        "label": "Container",
+        "importPath": "Container",
+        "description": "Container",
+        "isExtraImport": true,
+        "detail": "Container",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Header",
+        "kind": 6,
+        "importPath": "Container",
+        "description": "Container",
+        "peekOfCode": "class Header(QWidget):\n    \"\"\"Header class for collapsible group\"\"\"\n    def __init__(self, name, content_widget):\n        \"\"\"Header Class Constructor to initialize the object.\n        Args:\n            name (str): Name for the header\n            content_widget (QtWidgets.QWidget): Widget containing child elements\n        \"\"\"\n        super(Header, self).__init__()\n        self.content = content_widget",
+        "detail": "Container",
+        "documentation": {}
+    },
+    {
+        "label": "Container",
+        "kind": 6,
+        "importPath": "Container",
+        "description": "Container",
+        "peekOfCode": "class Container(QWidget):\n    \"\"\"Class for creating a collapsible group similar to how it is implement in Maya\n        Examples:\n            Simple example of how to add a Container to a QVBoxLayout and attach a QGridLayout\n            >>> layout = QtWidgets.QVBoxLayout()\n            >>> container = Container(\"Group\")\n            >>> layout.addWidget(container)\n            >>> content_layout = QtWidgets.QGridLayout(container.contentWidget)\n            >>> content_layout.addWidget(QtWidgets.QPushButton(\"Button\"))\n    \"\"\"",
+        "detail": "Container",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "example",
+        "description": "example",
+        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        # Create a central widget for the main window\n        self.central_widget = QtWidgets.QWidget()\n        self.setCentralWidget(self.central_widget)\n        # Create a vertical layout and assign it to the central widget\n        self.layout = QtWidgets.QVBoxLayout(self.central_widget)\n        # Create an instance of the Container class and add it to the layout\n        self.container = Container(\"Group\", color_background=True)",
+        "detail": "example",
+        "documentation": {}
+    },
+    {
+        "label": "apply_dark_theme",
+        "kind": 2,
+        "importPath": "example",
+        "description": "example",
+        "peekOfCode": "def apply_dark_theme(app):\n    \"\"\"Apply dark theme to the application.\"\"\"\n    # Create a QPalette object.\n    palette = QPalette()\n    palette.setColor(QPalette.Window, QColor(53, 53, 53))\n    palette.setColor(QPalette.WindowText, QColor(255, 255, 255))\n    palette.setColor(QPalette.Base, QColor(25, 25, 25))\n    palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))\n    palette.setColor(QPalette.ToolTipBase, QColor(255, 255, 255))\n    palette.setColor(QPalette.ToolTipText, QColor(255, 255, 255))",
+        "detail": "example",
+        "documentation": {}
+    }
+]
